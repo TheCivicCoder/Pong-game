@@ -1,0 +1,5 @@
+cd pong-game
+git init
+
+git add .
+git commit -m "my first commit"
