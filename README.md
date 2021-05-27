@@ -10,4 +10,5 @@ Finally the pong.ipynb file is the main file of the program. In which we import 
 
 
 
-![image](https://user-images.githubusercontent.com/65821385/119845682-1ca2e780-bf27-11eb-9c44-c1e5a8f472b9.png)
+![image](https://user-images.githubusercontent.com/65821385/119846192-8cb16d80-bf27-11eb-8ab0-e4ad25eb1588.png)
+
