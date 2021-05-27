@@ -1,3 +1,5 @@
+# playerA= input("Enter first Player Name ")
+
 import pygame
 pygame.init()
 
@@ -55,6 +57,10 @@ while carryOn:
             carryOn= False           #flag that we are done
         elif event.type== pygame.KEYDOWN:
             if event.key==pygame.K_x:      #pressing the x key will quit the game
+                text= font.render("Thanks For the Game :) !", .5, WHITE)
+                screen.blit(text, (50,230))
+                pygame.display.flip()
+                clock.tick(1)
                 carryOn=False
       
     
@@ -104,9 +110,9 @@ while carryOn:
     
     #Display scores:
     font= pygame.font.Font(None, 74)
-    text= font.render(str(scoreA), 1  , WHITE)
-    screen.blit(text, (250,10))
-    text= font.render(str(scoreB), 1, WHITE)
+    text= font.render(str("Player A " + str(scoreA)), .5  , WHITE)
+    screen.blit(text, (10,10))
+    text= font.render(str("Player B "+str(scoreB)), 1, WHITE)
     screen.blit(text, (420,10))
     
     #TO bring the change in the screen update the screen
@@ -116,6 +122,7 @@ while carryOn:
     clock.tick(60)
     
 #once we have exited the main program loop we can stop the game engine
+
 pygame.quit()
     
 
